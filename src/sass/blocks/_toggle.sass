@@ -1,0 +1,34 @@
+.toggle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    width: 80px
+    height: 40px
+
+    padding: 4px
+    border-radius: 20px
+    border: none
+    background-color: #DEE2E6
+
+    cursor: pointer
+
+    transition: .3s all
+    &__circle
+        width: 32px
+        height: 32px
+
+        border-radius: 100%
+        background-color: #fff
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05)
+
+        margin-left: 0
+
+        transition: .3s all
+        
+        &_active
+            margin-left: 55%
+
+    &_active
+        background-color: #20C997
